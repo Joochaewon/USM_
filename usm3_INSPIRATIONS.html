@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main3.css">
+<link rel="stylesheet" href="css/aos.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--    구글폰트   -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+<!--   폰트 어썸   -->
+<script src="https://kit.fontawesome.com/85b4ce6da2.js" crossorigin="anonymous"></script>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+       *{margin: 0; padding: 0; font-family: Roboto;}
+
+        .header_wrap {
+            width: 100%;
+            min-width:1903px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        header {
+            width: 247px; height: 760px;
+            position: absolute; 
+            float:left; 
+            z-index: 1;
+        }
+
+        #logo {
+            width: 70px;
+            margin-top: 50px;
+            margin-left: 41px; margin-right: 0;
+            font-style: italic; font-weight: bold;  
+        }
+        #menu {
+            margin-top: 21px;
+            margin-left: 41px;
+            font-family: Roboto; font-size: 10.5px; 
+            line-height: 22px;
+        }
+        #menu>.about:hover {font-weight: bold;}
+        #menu>.products:hover {font-weight: bold;}
+        #menu>.inspirations:hover {font-weight: bold;}
+        #menu>.gallery:hover {font-weight: bold;}
+        #menu>.contact:hover {font-weight: bold;}
+        #menu>.search:hover {font-weight: bold;}
+        
+        .main_img {
+            width: 83%;
+            height: 100%;
+            overflow: hidden;
+            margin-top: 50px;
+            margin-left: 250px; margin-right: 90px;
+        }
+
+
+        /* section */
+        section {
+            margin-left: 250px;
+            _margin-top: 130px;
+            position: relative;
+        }
+        section img {
+            margin-top: 20px;
+        }
+        #haroshi>img {
+            width: 980px; 
+            margin-right: 739px;
+            margin-top: 100px; margin-bottom: -20px;
+            float: left;
+        }
+        .box {
+            width: 590px; height: 400px;
+            margin-left: 990px; 
+            margin-top: 100px;
+            background: #f8f8f8;
+            position: absolute;
+            padding-right: 125px;
+            padding-left: 155px;
+        }
+        .box>h3 {
+            padding-top: 115px;
+            padding-bottom: 45px;
+            font-family: Roboto;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .box>p {
+            font-family: Roboto;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .serve_img_wrap {
+            clear: both;
+            position: relative;
+            width: 980px; 
+            margin-right: 739px;
+            top: 20px;
+        }
+
+        .h_p { 
+            width: 100%; _clear: both;
+        }
+        .profile {
+            width: 798px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 120px;
+        }
+
+
+        /* footer */
+        footer {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 150px; margin-bottom: 90px;
+            _position: fixed;
+        }
+        .footer_wrap {
+            margin-left: 55px;
+        }
+        .foo_logo {
+            float: left;
+            margin-right: -420px;
+            _position: fixed;
+        }
+        #f_logo {
+            width: 40px;
+            position: relative;
+            margin-left: 590px;
+        }
+        #c_usm {
+            margin-left: 590px;
+            font-size: 10px;
+
+        }
+        footer p {font-size: 10px;}
+
+        footer ul {
+            width: 650px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        footer ul>li {
+            float: left;
+            width: 25%;
+            text-align: left;
+            margin-right: -40px;
+        }
+
+        div>img {
+            _margin-top: 20px;
+        }
+        #home_top {
+            font-weight: bold;
+            display: inline-block;
+        }
+        .go-to-top {
+            width: 10px;
+            margin-left: 350px;
+            position: relative;
+            bottom: 15px; left: 68px;
+            border: none;
+            outline: none;
+            background-color: none;
+            color: #333;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+    
+    <script>
+        var mybutton = document.getElementById("go-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+
+
+
+<body>
+   <div class="header_wrap">
+        <header>
+            <h1 id="logo"><a href="http://joojoojoo.dothome.co.kr/usm/index.html"><img src="img/usm_logo.jpg" alt=""></a></h1>
+            <p id="menu">
+                <a href="usm1_ABOUT.html" class="about">ABOUT USM<br></a>
+                <a href="usm2_PRODUCTS.html" class="products">PRODUCTS</a><br>
+                <a href="usm3_INSPIRATIONS.html" class="inspirations">INSPIRATIONS</a><br>
+                <a href="usm4_GALLERY.html" class="gallery">GALLERY</a><br>
+                <a href="usm5_CONTACT.html" class="contact">CONTACT US</a>
+                <br><br>
+                <a href="usm6_SEARCH.html" class="search">SEARCH</a>
+            </p>
+       </header>
+        <img src="img/serve3_main.jpg" alt="" class="main_img">
+    </div>
+    
+    <section>
+        <div id="haroshi">
+            <img src="img/serve3_1.jpg" alt="">
+            <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Japanese Artist Haroshi</h3>
+                <p>
+                   Katsushika City, Tokyo<br>
+                   “A perfect display to show imperfect things.” <br>
+                   To the artist, Haroshi, the high integrity of the<br> 
+                   USM Haller holds various significance.
+                </p>
+            </div>
+        </div>
+        
+        <div class="serve_img_wrap">
+            <img src="img/serve3_2.jpg" alt="">
+            <img src="img/serve3_3.jpg" alt="">
+            <img src="img/serve3_4.jpg" alt="">
+            <img src="img/serve3_5.jpg" alt="">
+            <img src="img/serve3_6.jpg" alt="">
+        </div>
+    </section>
+    
+    <div class="f_logo" data-aos="fade-left" data-aos-duration="2000">
+        <img src="img/haroshi.jpg" class="profile" alt="">
+    </div>
+    
+    <footer>
+        <div class="footer_wrap">
+            <div class="foo_logo">
+                <img src="img/usm_logo_png.png" id="f_logo" alt=""><br><br>
+                <p id="c_usm">ⓒ2020-USM</p>
+            </div>
+
+            <ul>
+                <li>
+                    <p>
+                      Tel +41 31 720 7272&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                      info@usm.com
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                      FIND A SHOWROOM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                      FAQ
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                      INSTAGRAM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FACEBOOK<br>
+                      YOUTUBE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TWITTER
+                    </p>
+                </li>
+
+                <li id="home_top">
+                    <p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;/ 
+                    </p>
+                </li>
+                
+                <div div style="cursor:pointer;">
+                    <li class="go-to-top" onclick="topFunction()">TOP</li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

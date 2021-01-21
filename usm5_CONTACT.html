@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main4.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        *{margin: 0; padding: 0; font-family: Roboto;}
+
+        .header_wrap {
+            width: 100%;
+            min-width:1903px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        header {
+            width: 247px; height: 760px;
+            position: absolute; 
+            float:left; 
+            z-index: 1;
+        }
+        #logo {
+            width: 70px;
+            margin-top: 50px;
+            margin-left: 41px; margin-right: 0;
+            font-style: italic; font-weight: bold;  
+        }
+        #menu {
+            margin-top: 21px;
+            margin-left: 41px;
+            font-family: Roboto; font-size: 10.5px; 
+            line-height: 22px;
+        }
+        #menu>.about:hover {font-weight: bold;}
+        #menu>.products:hover {font-weight: bold;}
+        #menu>.inspirations:hover {font-weight: bold;}
+        #menu>.gallery:hover {font-weight: bold;}
+        #menu>.contact:hover {font-weight: bold;}
+        #menu>.search:hover {font-weight: bold;}
+        
+        .main_img {
+            width: 40%;
+            margin-top: 50px;
+            margin-left: 286px;
+        }
+        
+     /*        우측 */
+        aside {
+            width: 44%;
+            float: right;
+            margin-top: 50px;
+            font-size: 11px;
+        }
+        #country {
+            margin-top: 30px;
+/*            border-bottom: 1px soild #333;*/
+        }
+        #country>p {
+            color: #999999;
+            font-weight: 400;
+        }
+        #co_re {
+            margin-bottom: 20px;
+        }
+        #enter {
+            margin-bottom: 20px;
+        }
+        #underbar {
+            width: 98%;
+        }
+        #arrows {
+            width: 10px;
+            margin-left: -14px;
+            margin-top: -11px;
+        }
+        #underbar1 {
+            width: 98%;
+        }
+        #arrows1 {
+            width: 10px;
+            margin-right: 18px;
+            margin-top: -24px;
+            float: right;
+        }
+        
+/*        버튼 */
+        .submit {
+            border: 1px solid black;
+            width: 49%;
+            height: 48px;
+            background-color: black;
+            color: #fff;
+            margin-top: 30px;
+        }
+        .submit>p {
+            text-align: center;
+            margin-top: 16px;
+        }
+        .geolocate {
+            border: 1px solid black;
+            width: 48%;
+            height: 48px;
+            background-color: #fff;
+            color: black;
+            float: right;
+            margin-top: -48px;
+            margin-right: 2%;
+        }
+        .geolocate>p {
+            text-align: center;
+            margin-top: 16px;
+        }
+    </style>
+    
+    <script>
+        
+    </script>
+</head>
+
+
+
+<body>
+    <div class="header_wrap">
+        <header>
+            <h1 id="logo"><a href="http://joojoojoo.dothome.co.kr/usm/index.html"><img src="img/usm_logo_png.png" alt=""></a></h1>
+            <p id="menu">
+                <a href="usm1_ABOUT.html" class="about">ABOUT USM<br></a>
+                <a href="usm2_PRODUCTS.html" class="products">PRODUCTS</a><br>
+                <a href="usm3_INSPIRATIONS.html" class="inspirations">INSPIRATIONS</a><br>
+                <a href="usm4_GALLERY.html" class="gallery">GALLERY</a><br>
+                <a href="usm5_CONTACT.html" class="contact">CONTACT US</a>
+                <br><br>
+                <a href="usm6_SEARCH.html" class="search">SEARCH</a>
+            </p>
+        </header>
+        
+        <img src="img/contact_main.jpg" alt="" class="main_img">
+    </div>
+    
+    <aside>
+        <h2>STORES</h2>
+        
+        <div id="country">
+            <p id="co_re">COUNTRY/REGION</p>
+            <img src="img/contact_underbar.jpg" id="underbar" alt="">
+            <img src="img/contact_arrows.png" id="arrows" alt="">
+            
+            <p id="enter">ENTER A CITY AND STATE, ZIP CODE, OR STREET ADDRESS</p>
+            <img src="img/contact_underbar.jpg" id="underbar1" alt="">
+            
+            <div class="dropdown">
+                <img src="img/contact_arrows.png" onclick="dropdown" id="arrows1" alt="">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="SOUTH KOREA">SOUTH KOREA</a>
+                    <a href="JAPAN">JAPAN</a>
+                    <a href="UNITED KINGDOM">UNITED KINGDOM</a>
+                    <a href="UNITED STATES">UNITED STATES</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="submit">
+            <p>SUBMIT</p>
+        </div>
+        <div class="geolocate">
+            <p>GEOLOCATE</p>
+        </div>
+    </aside>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
